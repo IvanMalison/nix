@@ -202,7 +202,7 @@ WorkdirInfo getWorkdirInfo(const Input & input, const Path & workdir)
 
 std::pair<StorePath, Input> fetchFromWorkdir(ref<Store> store, Input & input, const Path & workdir, const WorkdirInfo & workdirInfo)
 {
-    const bool submodules = maybeGetBoolAttr(input.attrs, "submodules").value_or(false);
+    const bool submodules = maybeGetBoolAttr(input.attrs, "submodules").value_or(true);
     auto gitDir = ".git";
 
     if (!fetchSettings.allowDirty)
