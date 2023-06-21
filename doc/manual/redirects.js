@@ -356,6 +356,10 @@ const redirects = {
     "one-time-setup": "testing.html#one-time-setup",
     "using-the-ci-generated-installer-for-manual-testing": "testing.html#using-the-ci-generated-installer-for-manual-testing",
   }
+  "contributing/hacking.html": {
+    "nix-with-flakes": "#building-nix-with-flakes"
+    "classic-nix": "#building-nix"
+  }
 };
 
 // the following code matches the current page's URL against the set of redirects.
